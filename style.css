@@ -5,10 +5,10 @@
 }
 
 body {
-	width: 100%;
+	width: 1000px;
 	background-image: url(https://thedaytripper.com/wp-content/smush-webp/2025/09/Hot.jpg.webp);
 
-	background-size: 90%;
+	background-size: 100%;
 	background-position: center;
 	background-attachment: fixed;
 	position: relative;
@@ -23,20 +23,20 @@ h1 {
 }
 
 p {
-	font-size: 30px;
+	font-size: 24px;
 	color: rgb(81, 45, 7);
 	margin: 0 auto;
 	line-height: 1.3;
 }
 
 .intro {
-	width: 1200px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
 .grid-container {
 	display: grid;
-	width: 1200px;
+	width: 1000px;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	column-gap: 20px;
@@ -69,9 +69,9 @@ p {
 h3 {
 	text-align: center;
 	vertical-align: middle;
-	font-size: 32px;
+	font-size: 24px;
 	color: rgb(81, 45, 7);
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 /* Lantana page */
@@ -80,11 +80,11 @@ h3 {
 .home-button a:link {
 	display: inline-block;
 	padding: 5px 10px;
-	font-size: 20px;
+	font-size: 16px;
 	border-radius: 5px;
 	position: absolute;
 	top: -85px;
-	right: 150px;
+	right: -85px;
 	background-color: rgb(254, 254, 211);
 	color: rgb(7, 56, 7);
 	text-decoration: none;
@@ -101,16 +101,16 @@ h3 {
 
 .lantana-intro {
 	display: flex;
-	width: 1200px;
-	gap: 50px;
+	width: 1000px;
+	gap: 25px;
 	align-items: center;
 }
 
 .plant-care {
 	display: grid;
-	width: 1200px;
+	width: 1000px;
 	grid-template-columns: 30px 200px 1fr;
-	margin: 50px auto 100px auto;
+	margin: 100px auto;
 	column-gap: 15px;
 	row-gap: 30px;
 }
@@ -125,8 +125,8 @@ h3 {
 }
 
 .tip-icons {
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 	color: rgb(81, 45, 7);
 	background-color: rgb(132, 200, 132);
 	border-radius: 50%;
@@ -141,12 +141,12 @@ h3 {
 
 	background-color: rgb(171, 210, 171);
 	border: solid 1px rgb(81, 45, 7);
-	width: 1200px;
+	width: 1000px;
 	margin: 0 auto 150px auto;
 }
 
 .aside-container p {
-	font-size: 24px;
+	font-size: 20px;
 	padding-top: 45px;
 }
 
@@ -154,4 +154,5 @@ footer {
 	background-color: black;
 	color: rgb(254, 254, 211);
 	padding: 5px 10px;
+	font-size: 12px;
 }
