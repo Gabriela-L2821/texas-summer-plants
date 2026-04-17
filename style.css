@@ -182,4 +182,9 @@ footer {
 		font-size: 32px;
 		padding: 10px;
 	}
+
+	.aside-container p {
+		font-size: 28px;
+		padding-top: 0;
+	}
 }
