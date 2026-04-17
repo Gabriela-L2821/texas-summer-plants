@@ -157,17 +157,29 @@ footer {
 	font-size: 12px;
 }
 
-@media (max-width: 34em) {
+@media (max-width: 544px) {
 	body {
 		background-color: rgb(164, 195, 239);
 		background-image: none;
 	}
 	.grid-container {
-		grid-template-columns: 1fr;
-		row-gap: 4em;
+		grid-template-columns: 1fr 1fr;
+		row-gap: 50px;
+		column-gap: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 
 	.plant-img-gallery {
-		width: 80%;
+		width: 100%;
+	}
+
+	.intro {
+		width: 90%;
+	}
+
+	h3 {
+		font-size: 32px;
+		padding: 10px;
 	}
 }
