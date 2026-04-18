@@ -37,20 +37,40 @@
 			color: black !important;
 			padding: 5px 10px;
 		}
+
+		@media (max-width: 768px) {
+			.lantana-intro {
+				flex-direction: column;
+			}
+			.plant-care {
+				grid-template-columns: 30px 1fr;
+				row-gap: 0;
+			}
+			.plant-care p {
+				grid-column: 2;
+			}
+
+			.plant-care .wtp {
+				justify-self: start;
+			}
+
+			.padding {
+				padding-bottom: 25px;
+			}
+		}
 	</style>
 </html>
 <body>
+	<div class="home-button">
+		<a href="index.html">Home</a>
+	</div>
 	<h1>Lantana</h1>
 	<div class="lantana-intro">
 		<img
 			src="https://www.txsmartscape.com/getmedia/ee162f03-f6e8-4d73-b256-20d7f1b96a9e/uuid270-2-f.jpg"
 			alt="multicolored lantana flowers"
-			width="450"
+			width="100%"
 			height="auto" />
-
-		<div class="home-button">
-			<a href="index.html">Home</a>
-		</div>
 
 		<p>
 			Lantana are flowering plants that come in many colors, such as orange,
@@ -76,7 +96,7 @@
 		<div class="wtp">
 			<p>When to plant:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Early summer when all danger of frost is over and the soil has warmed up.
 		</p>
 		<svg
@@ -95,7 +115,7 @@
 		<div class="wtp">
 			<p>Type of Soil:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Lantana like rich, well-draining soil. If planting in pots, be sure to use
 			high quality all purpose potting mix. Containers need to have adequate
 			drainage.
@@ -107,7 +127,7 @@
 		<div class="wtp">
 			<p>Watering:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Water when the top 2 inches of soil is dry. Make sure soil is moist, but
 			not soggy. Containers lose moisture more quickly than the ground, and so
 			will need to be watered more frequently.
@@ -128,7 +148,9 @@
 		<div class="wtp">
 			<p>Sunshine:</p>
 		</div>
-		<p>Lantana need at least 6 to 8 hours of direct sunlight per day.</p>
+		<p class="padding">
+			Lantana need at least 6 to 8 hours of direct sunlight per day.
+		</p>
 	</div>
 
 	<footer>Copyright &#169; 2026 GLopez</footer>

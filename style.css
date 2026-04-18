@@ -13,12 +13,12 @@ body {
 	position: relative;
 }
 
-body,
 .intro,
 .grid-container,
 .aside-container {
 	width: 90%; /* Take up full width on mobile */
-	/* max-width: 1000px; Limit width on desktop */
+	max-width: 1000px;
+	/* Limit width on desktop */
 	margin: 0 auto; /* Keep it centered */
 }
 
@@ -88,7 +88,7 @@ h3 {
 	border-radius: 5px;
 	position: absolute;
 	top: -85px;
-	right: -85px;
+	right: 35px;
 	background-color: rgb(254, 254, 211);
 	color: rgb(7, 56, 7);
 	text-decoration: none;
@@ -105,18 +105,20 @@ h3 {
 
 .lantana-intro {
 	display: flex;
-	width: 1000px;
+	width: 75%;
 	gap: 25px;
 	align-items: center;
+	max-width: 1000px;
 }
 
 .plant-care {
 	display: grid;
-	width: 1000px;
+	width: 75%;
 	grid-template-columns: 30px 200px 1fr;
 	margin: 100px auto;
 	column-gap: 15px;
 	row-gap: 30px;
+	max-width: 1000px;
 }
 
 .plant-care p {
