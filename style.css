@@ -187,12 +187,6 @@ footer {
 		gap: 20px;
 	}
 
-	@media (min-width: 768px) {
-		.grid-container {
-			grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
-		}
-	}
-
 	.plant-img-gallery {
 		width: 100%;
 	}
