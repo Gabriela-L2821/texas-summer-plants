@@ -69,16 +69,13 @@ p {
 	cursor: pointer;
 }
 
-.pfg {
-	padding-top: 0;
-}
-
 h3 {
 	text-align: center;
 	vertical-align: middle;
 	font-size: 24px;
 	color: rgb(81, 45, 7);
 	padding-top: 10px;
+	padding-bottom: 15px;
 }
 
 /* Lantana page */
@@ -178,8 +175,6 @@ footer {
 		grid-template-columns: 1fr 1fr;
 		row-gap: 50px;
 		column-gap: 50px;
-		padding-left: 50px;
-		padding-right: 50px;
 	}
 
 	.plant-img-gallery {
@@ -195,9 +190,17 @@ footer {
 		padding: 10px;
 	}
 
+	.pfg {
+		padding-top: 0;
+	}
+
+	.esp {
+		padding-top: 15px;
+	}
+
 	.aside-container {
 		flex-direction: column;
-		width: 80%;
+		width: 90%;
 	}
 	.aside-container p {
 		font-size: 32px;
