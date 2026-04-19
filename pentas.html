@@ -31,7 +31,16 @@
 			}
 
 			.lantana-intro {
+				flex-direction: column;
 				gap: 50px;
+			}
+
+			.intro,
+			.grid-container,
+			.aside-container {
+				width: 90%;
+				max-width: 1000px;
+				margin: 0 auto;
 			}
 
 			p {
@@ -43,6 +52,37 @@
 				width: 100%;
 				color: black !important;
 				padding: 5px 10px;
+			}
+
+			@media (max-width: 768px) {
+				.lantana-intro {
+					gap: 30px;
+				}
+
+				.lantana-intro img {
+					width: 100%;
+				}
+
+				.lantana-intro p {
+					margin-right: 0;
+				}
+
+				.plant-care {
+					grid-template-columns: 30px 1fr;
+					row-gap: 0;
+				}
+
+				.plant-care p {
+					grid-column: 2;
+				}
+
+				.plant-care .wtp {
+					justify-self: start;
+				}
+
+				.padding {
+					padding-bottom: 25px;
+				}
 			}
 		</style>
 	</head>
@@ -57,7 +97,7 @@
 		<img
 			src="https://www.bonicklandscaping.com/wp-content/uploads/2025/06/Pentas_flowers-768x593.jpg"
 			alt="bright pink penta flowers in dark background"
-			width="500"
+			width="50%"
 			height="auto" />
 		<p>
 			Pentas develop beautiful star shaped flowers that bloom all summer long.
@@ -83,7 +123,7 @@
 		<div class="wtp">
 			<p>When to plant:</p>
 		</div>
-		<p>Late spring after all danger of frost has passed.</p>
+		<p class="padding">Late spring after all danger of frost has passed.</p>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
@@ -99,7 +139,7 @@
 		<div class="wtp">
 			<p>Type of Soil:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Pentas need well draining, fertile, and slightly acidic to neutral soil,
 			enriched with organic matter (compost). They thrive in rich, loamy, sandy,
 			well draining soil.
@@ -111,7 +151,7 @@
 		<div class="wtp">
 			<p>Watering:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Water deeply once a week, increasing frequency during hot dry spells if
 			the top 1-2 inches of soil are dry.
 		</p>
@@ -130,7 +170,7 @@
 		<div class="wtp">
 			<p>Sunshine:</p>
 		</div>
-		<p>
+		<p class="padding">
 			They thrive in full sun, and need at least six hours of direct sunlight
 			daily.
 		</p>
