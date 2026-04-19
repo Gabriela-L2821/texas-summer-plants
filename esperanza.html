@@ -31,10 +31,51 @@
 			}
 
 			.lantana-intro {
-				gap: 0;
+				flex-direction: column;
 			}
 			.lantana-intro img {
 				margin-right: 50px;
+			}
+
+			.intro,
+			.grid-container,
+			.aside-container {
+				width: 90%;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
+			@media (max-width: 768px) {
+				.lantana-intro {
+					gap: 30px;
+				}
+
+				.lantana-intro img {
+					width: 100%;
+				}
+
+				.lantana-intro p {
+					margin-right: 0;
+					font-size: 24px;
+				}
+
+				.plant-care {
+					grid-template-columns: 30px 1fr;
+					row-gap: 0;
+				}
+
+				.plant-care p {
+					grid-column: 2;
+					font-size: 24px;
+				}
+
+				.plant-care .wtp {
+					justify-self: start;
+				}
+
+				.padding {
+					padding-bottom: 25px;
+				}
 			}
 
 			footer {
@@ -47,16 +88,15 @@
 	</head>
 </html>
 <body>
+	<div class="home-button">
+		<a href="index.html">Home</a>
+	</div>
 	<h1>Esperanza (Yellow Bells)</h1>
 	<div class="lantana-intro">
-		<div class="home-button">
-			<a href="index.html">Home</a>
-		</div>
-
 		<img
 			src="https://www.rainbowgardens.biz/wp-content/uploads/2021/06/esperanza.jpg"
 			alt="yellow esperanza flowers"
-			width="600"
+			width="50%"
 			height="auto" />
 		<p>
 			A popular, fast growing Texas native shrub, known for its vibrant,
@@ -82,7 +122,7 @@
 		<div class="wtp">
 			<p>When to plant:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Mid to late spring, after the last threat of frost has passed. This allows
 			the shrub to establish a strong root system before the summer heat.
 		</p>
@@ -102,7 +142,7 @@
 		<div class="wtp">
 			<p>Type of Soil:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Esperanza shrubs thrive in well drained, average to rocky/sandy soil with
 			pH ranging from slightly acidic to alkaline (6.1 to 7.8). Excellent
 			drainage is needed to avoid root rot. They can not survive in heavy clay
@@ -115,7 +155,7 @@
 		<div class="wtp">
 			<p>Watering:</p>
 		</div>
-		<p>
+		<p class="padding">
 			For the first year after planting, water every 7-10 days to keep the soil
 			moist but not waterlogged. After that water deeply every 2-3 weeks,
 			allowing the soil to dry between waterings.
@@ -135,7 +175,7 @@
 		<div class="wtp">
 			<p>Sunshine:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Thrives in full sun, requiring at least 6-8 hours of direct sunlight
 			daily. It does well in the dry, hot temperatures of Texas summers.
 		</p>
