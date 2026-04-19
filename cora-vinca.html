@@ -27,6 +27,14 @@
 			background-size: cover !important;
 		}
 
+		.intro,
+		.grid-container,
+		.aside-container {
+			width: 90%;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
 		.lantana-intro {
 			gap: 0px;
 		}
@@ -44,16 +52,47 @@
 			color: black !important;
 			padding: 5px 10px;
 		}
+
+		@media (max-width: 768px) {
+			.lantana-intro {
+				flex-direction: column-reverse;
+				gap: 30px;
+			}
+
+			.lantana-intro img {
+				width: 100%;
+			}
+
+			.lantana-intro p {
+				margin-right: 0;
+			}
+
+			.plant-care {
+				grid-template-columns: 30px 1fr;
+				row-gap: 0;
+			}
+
+			.plant-care p {
+				grid-column: 2;
+			}
+
+			.plant-care .wtp {
+				justify-self: start;
+			}
+
+			.padding {
+				padding-bottom: 25px;
+			}
+		}
 	</style>
 </html>
 
 <body>
 	<h1>Cora Vinca (Periwinkle)</h1>
+	<div class="home-button">
+		<a href="index.html">Home</a>
+	</div>
 	<div class="lantana-intro">
-		<div class="home-button">
-			<a href="index.html">Home</a>
-		</div>
-
 		<p>
 			Cora Vinca are annual plants that offer bright beautiful blooms that come
 			in a variety of colors, like pink, white, and red. They can be enjoyed all
@@ -64,7 +103,7 @@
 		<img
 			src="https://www.harrisseeds.com/cdn/shop/files/20836.jpg?v=1730948112"
 			alt="multicolored periwinkle flowers"
-			width="500"
+			width="50%"
 			height="auto" />
 	</div>
 
@@ -84,7 +123,7 @@
 		<div class="wtp">
 			<p>When to plant:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Late spring to early summer, once all danger of frost has passed and soil
 			temperatures consistently reach 60°F - 65°F. Usually late April or May.
 		</p>
@@ -103,7 +142,9 @@
 		<div class="wtp">
 			<p>Type of Soil:</p>
 		</div>
-		<p>Well drained, sandy or rocky soil. Raised beds are ideal.</p>
+		<p class="padding">
+			Well drained, sandy or rocky soil. Raised beds are ideal.
+		</p>
 		<img
 			class="tip-icons"
 			src="https://img.icons8.com/windows/64/water.png"
@@ -111,7 +152,7 @@
 		<div class="wtp">
 			<p>Watering:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Water daily when first planted for the first 1-2 weeks, then water only
 			when the first top 1-2 inches of soil are dry. They thrive in well-drained
 			soil.
@@ -131,7 +172,7 @@
 		<div class="wtp">
 			<p>Sunshine:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Cora Vinca thrive in full sun, and need at least 6-8 hours of direct
 			sunlight per day.
 		</p>
