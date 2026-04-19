@@ -30,26 +30,66 @@
 				background-size: cover !important;
 			}
 
+			.intro,
+			.grid-container,
+			.aside-container {
+				width: 90%;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
 			footer {
 				background-color: rgb(192, 205, 237) !important;
 				width: 100%;
 				color: black !important;
 				padding: 5px 10px;
 			}
+
+			@media (max-width: 768px) {
+				.lantana-intro {
+					gap: 30px;
+				}
+
+				.lantana-intro img {
+					width: 100%;
+				}
+
+				.lantana-intro p {
+					margin-right: 0;
+					font-size: 24px;
+				}
+
+				.plant-care {
+					grid-template-columns: 30px 1fr;
+					row-gap: 0;
+				}
+
+				.plant-care p {
+					grid-column: 2;
+					font-size: 24px;
+				}
+
+				.plant-care .wtp {
+					justify-self: start;
+				}
+
+				.padding {
+					padding-bottom: 25px;
+				}
+			}
 		</style>
 	</head>
 </html>
 <body>
+	<div class="home-button">
+		<a href="index.html">Home</a>
+	</div>
 	<h1>Texas Star Hibiscus</h1>
 	<div class="lantana-intro">
-		<div class="home-button">
-			<a href="index.html">Home</a>
-		</div>
-
 		<img
 			src="https://www.southernliving.com/thmb/csi2FeqfpKvdySfLG0q9ngGpBW8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-504322475-1fb6dd0254f141e3a8921e83419e2481.jpg"
 			alt="garden with marigold flowers"
-			width="800"
+			width="100%"
 			height="auto" />
 		<p>
 			The Texas Star Hibiscus is a hardy perennial plant that features 3-6 inch
@@ -74,7 +114,7 @@
 		<div class="wtp">
 			<p>When to plant:</p>
 		</div>
-		<p>
+		<p class="padding">
 			In the spring after the last frost, allowing roots to establish before
 			summer heat.
 		</p>
@@ -93,7 +133,7 @@
 		<div class="wtp">
 			<p>Type of Soil:</p>
 		</div>
-		<p>
+		<p class="padding">
 			They thrive in consistently moist, well draining and slightly acidic soil
 			enriched with organic matter. Rich, loamy, or sandy soil is best. Mulching
 			is a must.
@@ -105,7 +145,7 @@
 		<div class="wtp">
 			<p>Watering:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Texas Star Hibiscus require frequent watering, often daily or twice daily
 			for container plants. For in ground plants, water deeply and thoroughly
 			3-4 times per week. They are native to marshes and can handle "wet feet."
@@ -126,7 +166,7 @@
 		<div class="wtp">
 			<p>Sunshine:</p>
 		</div>
-		<p>
+		<p class="padding">
 			They require full sun, at least 6-8 hours daily. However, they can benefit
 			from afternoon shade during extreme heat to prevent leaf scorch and to
 			reduce watering needs.
