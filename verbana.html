@@ -30,26 +30,66 @@
 				background-size: cover !important;
 			}
 
+			.intro,
+			.grid-container,
+			.aside-container {
+				width: 90%;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
 			footer {
 				background-color: rgb(192, 205, 237) !important;
 				width: 100%;
 				color: black !important;
 				padding: 5px 10px;
 			}
+
+			@media (max-width: 768px) {
+				.lantana-intro {
+					gap: 30px;
+				}
+
+				.lantana-intro img {
+					width: 100%;
+				}
+
+				.lantana-intro p {
+					margin-right: 0;
+					font-size: 24px;
+				}
+
+				.plant-care {
+					grid-template-columns: 30px 1fr;
+					row-gap: 0;
+				}
+
+				.plant-care p {
+					grid-column: 2;
+					font-size: 24px;
+				}
+
+				.plant-care .wtp {
+					justify-self: start;
+				}
+
+				.padding {
+					padding-bottom: 25px;
+				}
+			}
 		</style>
 	</head>
 </html>
 <body>
+	<div class="home-button">
+		<a href="index.html">Home</a>
+	</div>
 	<h1>Verbana</h1>
 	<div class="lantana-intro">
-		<div class="home-button">
-			<a href="index.html">Home</a>
-		</div>
-
 		<img
 			src="https://www.depts.ttu.edu/pss/_resources/ldp/images/.private_ldp/a224628/production/master/cb127458-edcc-4462-842a-2204cc679a71.jpg"
 			alt="bush with several purple flowers"
-			width="1000"
+			width="100%"
 			height="auto" />
 		<p>
 			Verbana in Texas come in several varieties and mainly produce
@@ -75,7 +115,7 @@
 		<div class="wtp">
 			<p>When to plant:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Spring (March) after the last frost or fall (late September or October).
 		</p>
 		<svg
@@ -94,7 +134,7 @@
 		<div class="wtp">
 			<p>Type of Soil:</p>
 		</div>
-		<p>
+		<p class="padding">
 			They require well draining, nutrient poor to average soil with a slightly
 			acidic to neutral ph (5.8 to 7.2). They thrive in sandy or sandy loam
 			soils, and are highly drought tolerant once established.
@@ -106,7 +146,7 @@
 		<div class="wtp">
 			<p>Watering:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Water daily for the first 1-2 weeks for newly planted verbana. Once
 			established, weekly watering is recommended. During Texas heatwaves,
 			watering twice a week may be necessary.
@@ -127,7 +167,7 @@
 		<div class="wtp">
 			<p>Sunshine:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Verbana thrive in full, direct sun, and need at least 6-8 hours of daily
 			sunlight to bloom. Eight to ten hours of sunshine is ideal.
 		</p>
