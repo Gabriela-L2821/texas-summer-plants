@@ -28,32 +28,76 @@
   .lantana-intro {
     flex-direction: column;
   }
+
+	.intro, 
+	.grid-container, 
+	.aside-container {
+		width:90%;
+		max-width: 1000px;
+		margin:0 auto;
+	}
 	footer {
 			background-color: rgb(192, 205, 237) !important;
 			width: 100%;
 			color: black !important;
 			padding: 5px 10px;
 		}
+
+		@media (max-width:768px) {
+			.lantana-intro {
+				gap:30px;
+			}
+
+			.lantana-intro img l{
+				width:100%;
+			}
+
+			.lantana-intro p {
+				margin-right:0;
+				font-size: 20px;
+			}
+
+			.plant-care {
+				grid-template-columns: 30px 1fr;
+				row-gap:0;
+			}
+
+			.plant-care p {
+				grid-column:2;
+				font-size:20px;
+			}
+
+			.plant-care .wtp {
+				justify-self: start;
+			}
+
+			.padding {
+				padding-bottom: 25px;
+			}
+
+			
+		}
 </style>
 
 	</head>
 </html>
 <body>
+	<div class=home-button>
+			
+			<a href="index.html">Home</a></button>
+		</div>
 
 	<h1>Succulents</h1>
 	<div class="lantana-intro">
 		
 		
-		<div class=home-button>
-			
-			<a href="index.html">Home</a></button>
-		</div>
+		
 		
 		
 		<img
 		src="https://bigtex.com/wp-content/uploads/2018/02/pexels-photo-360523-1024x680.jpeg"
 		alt="various succulent plants in pots"
-		width="1000"
+		width="100%"
 		height="auto" />
     <p>There are several varieties of succulents that thrive in Texas, such as aloe vera, agave, cactus, and yuccu plants.  They come in a huge variety of shapes, sizes and colors.  They can be beneficial medicinally, such as aloe for a burn, some varieties are edible, such as cactus.  They are great for landscaping but may need to be planted in containers so they can be brought inside during cold weather. 
 			
@@ -76,7 +120,7 @@
 		<div class="wtp">
 			<p>When to plant:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Early spring (February to March) or autumn (late September to October), to avoid the extreme heat of summer and the danger of winter frost.  The cooler temperatures allow roots to establish without the stress of intense sun, encouraging stronger growth for Texas summers.</p>  
 			<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +137,7 @@
 	<div class="wtp">
 		<p>Type of Soil:</p>
 	</div>
-	<p>
+	<p class="padding">
 		Succulents require extremely well draining, gritty, inorganic soil.  It is recommended to use a base sandy loam amended with 50% - 80% course grit, such as expanded shale, lava sand or decomposed granite.  Avoid standard potting mixes as these retain too much moisture.  It is also a good idea to apply gravel or small pebbles on top of the soil for drainage around the neck of the plant and to protect against rot.    
 	</p>
 	<img
@@ -103,7 +147,7 @@
 	<div class="wtp">
 		<p>Watering:</p>
 	</div>
-	<p>
+	<p class="padding">
 		During the summer outdoor plants typically need to be watered deeply every 3-7 days.  Indoor succulents usually require water every 10-14 days. Water until water runs out of the drainage holes, then let the soil dry completely. </p>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +164,7 @@
 		<div class="wtp">
 			<p>Sunshine:</p>
 		</div>
-		<p>Most succulents thrive with morning sun, six plus hours in the summer.  However in the afternoons it is beneficial to bring them under the shade or to use a shade cloth.  Slowly indroduce indoor succulents to direct sunlight over a period of 2-3 weeks to avoid sunburn.  Bleached, white, or crusty brown spots indicate sunburn.  </p>
+		<p class="padding-+*/*9">Most succulents thrive with morning sun, six plus hours in the summer.  However in the afternoons it is beneficial to bring them under the shade or to use a shade cloth.  Slowly indroduce indoor succulents to direct sunlight over a period of 2-3 weeks to avoid sunburn.  Bleached, white, or crusty brown spots indicate sunburn.  </p>
 	</div>
 	<footer>Copyright &#169; 2026 GLopez</footer>
 </body>
