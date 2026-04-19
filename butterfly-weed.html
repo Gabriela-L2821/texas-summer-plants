@@ -23,7 +23,7 @@
 	<style>
 		img {
 			width: 500px;
-			height: 400px;
+			height: auto;
 			object-fit: contain;
 		}
 		body {
@@ -32,24 +32,65 @@
 			background-size: cover !important;
 		}
 
+		.intro,
+		.grid-container,
+		.aside-container {
+			width: 90%;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
 		footer {
 			background-color: rgb(192, 205, 237) !important;
 			width: 100%;
 			color: black !important;
 			padding: 5px 10px;
 		}
+
+		@media (max-width: 768px) {
+			.lantana-intro {
+				flex-direction: column;
+				gap: 30px;
+			}
+
+			.lantana-intro img {
+				width: 100%;
+			}
+
+			.lantana-intro p {
+				margin-right: 0;
+				font-size: 24px;
+			}
+
+			.plant-care {
+				grid-template-columns: 30px 1fr;
+				row-gap: 0;
+			}
+
+			.plant-care p {
+				grid-column: 2;
+				font-size: 24px;
+			}
+
+			.plant-care .wtp {
+				justify-self: start;
+			}
+
+			.padding {
+				padding-bottom: 25px;
+			}
+		}
 	</style>
 </html>
 <body>
+	<div class="home-button">
+		<a href="index.html">Home</a>
+	</div>
 	<h1>Butterfly Weed</h1>
 	<div class="lantana-intro">
 		<img
 			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfy_REfaJOarxL5olrP5zE9YrE2vI2qblxg&s"
 			alt="bush with large orange flowers" />
-
-		<div class="home-button">
-			<a href="index.html">Home</a>
-		</div>
 
 		<p>
 			Butterfly weed is a vibrant, drought tolerant perennial that is native to
@@ -75,7 +116,7 @@
 		<div class="wtp">
 			<p>When to plant:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Spring after the final frost has passed for container grown plants. For
 			seeds, fall (October-December) is best. Fall planting allows roots to
 			establish during cool weather. Early spring is ideal for establishing new,
@@ -96,7 +137,7 @@
 		<div class="wtp">
 			<p>Type of Soil:</p>
 		</div>
-		<p>
+		<p class="padding">
 			They favor well drained, sandy, loamy or rocky limestone soils. Heavy clay
 			must be amended with compost, gravel, or expanded shale to improve
 			drainage. They cannot tolerate "wet feet" and will rot in consistently
@@ -109,7 +150,7 @@
 		<div class="wtp">
 			<p>Watering:</p>
 		</div>
-		<p>
+		<p class="padding">
 			For the first year for newly planted plants, water roughly every 5-10 days
 			to encourage deep roots. Once established they are drought resistant and
 			require very little additional water.
@@ -129,7 +170,7 @@
 		<div class="wtp">
 			<p>Sunshine:</p>
 		</div>
-		<p>
+		<p class="padding">
 			Butterfly Weed requires full direct sunlight to thrive, and bloom
 			vigorously. Six to eight hours of direct sunlight daily is recommended.
 		</p>
