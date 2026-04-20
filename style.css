@@ -6,12 +6,24 @@
 }
 
 body {
-	background-image: url(/img/Sunshine.jpg);
+	background-image: url(/img/blue-sky.jpg);
 
 	background-size: 100%;
-	background-position: center;
+	background-position: top;
 	background-attachment: fixed;
 	position: relative;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 104%;
+	background-color: rgb(226, 226, 243);
+	opacity: 0.6;
+	z-index: -1;
 }
 
 .intro,
