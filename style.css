@@ -2,10 +2,11 @@
 	margin: 0 auto;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Red Hat Display", sans-serif;
 }
 
 body {
-	background-image: url(https://thedaytripper.com/wp-content/smush-webp/2025/09/Hot.jpg.webp);
+	background-image: url(/img/Sunshine.jpg);
 
 	background-size: 100%;
 	background-position: center;
