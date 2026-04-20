@@ -8,9 +8,9 @@
 body {
 	background-image: url(/img/blue-sky.jpg);
 
-	background-size: 100%;
+	background-size: 134%;
 	background-position: top;
-	background-attachment: fixed;
+
 	position: relative;
 }
 
