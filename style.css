@@ -6,24 +6,16 @@
 }
 
 body {
-	background-image: url(/img/blue-sky.jpg);
-
-	background-size: 134%;
+	background-image:
+		linear-gradient(
+			to bottom right,
+			rgba(181, 201, 252, 0.5),
+			rgba(181, 201, 252, 1.5)
+		),
+		url(img/blue-sky.jpg);
+	background-size: cover;
 	background-position: top;
-
 	position: relative;
-}
-
-body::before {
-	content: "";
-	position: absolute;
-	top: -100px;
-	left: 0;
-	width: 100%;
-	height: 104%;
-	background-color: rgb(226, 226, 243);
-	opacity: 0.6;
-	z-index: -1;
 }
 
 .intro,
@@ -177,10 +169,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-	body {
+	/* body { 
 		background-color: rgb(165, 199, 246);
 		background-image: none;
 	}
+	*/
 
 	p {
 		font-size: 36px;
